@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/data/data.dart';
+import 'package:food_delivery_app_ui/widget/recent_order.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
           iconSize: 30.0,
           icon: const Icon(Icons.account_circle),
         ),
-        title: const Text('Food Delivery'),
+        title: const Text('Impact Kitchen'),
         actions: [
           TextButton(
               onPressed: () {},
@@ -58,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
+          const RecentOrders()
         ],
       ),
     );
